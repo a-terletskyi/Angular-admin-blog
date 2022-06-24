@@ -1,0 +1,16 @@
+.header {
+    background-color: #383a3e;
+
+    .nav-link {
+        font-size: 17px;
+        color: #8d8b8b;
+    }
+
+    .nav-link:hover {
+        color: #cdcdcd;
+    }
+
+    .active {
+        color: #cdcdcd;
+    }
+}
