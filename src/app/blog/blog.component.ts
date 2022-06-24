@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IBlog } from '../interfaces/iblog';
 
 @Component({
   selector: 'app-blog',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
+  blogs: IBlog[] = [{ title: 'Title 1', text: 'some text 1', author: 'Ivan' }]
 
   constructor() { }
 

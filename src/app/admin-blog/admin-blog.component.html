@@ -1,1 +1,41 @@
-<p>admin-blog works!</p>
+<div class="container-fluid d-flex pt-2">
+    <ul class="sidebar m-0 p-0 pe-3">
+        <li class="sidebar__item btn-dark">Blogs</li>
+    </ul>
+    <div class="container-fluid">
+        <form class="createBlog w-100 mb-4">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="title" placeholder="title here..">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="text" rows="3" placeholder="text here.."></textarea>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="author" placeholder="author here..">
+            </div>
+            <button type="submit" class="btn btn-dark" id="add">Add</button>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Text</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>title 1</td>
+                    <td>{{'some text 1'}}</td> <!-- {{ (str.length > 50) ? (str | slice:0:50) + '...' : (str) }}  -->
+                    <td>ivan</td>
+                    <td><button type="button" class="btn btn-dark">Edit</button></td>
+                    <td><button type="button" class="btn btn-dark">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
